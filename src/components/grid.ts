@@ -141,10 +141,17 @@ export interface ApexGridEventMap<T extends object> {
  *
  */
 @themes({
-  bootstrap,
-  fluent,
-  indigo,
-  material,
+  light:{
+    bootstrap,
+    fluent,
+    indigo,
+    material,
+  },dark:{
+    bootstrap,
+    fluent,
+    indigo,
+    material,
+  }
 })
 export class ApexGrid<T extends object> extends EventEmitterBase<ApexGridEventMap<T>> {
   public static get is() {
